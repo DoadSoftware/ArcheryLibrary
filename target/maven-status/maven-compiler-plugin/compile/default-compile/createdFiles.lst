@@ -1,0 +1,13 @@
+com\archery\service\impl\ArcheryServiceImpl.class
+com\archery\model\TieBreakerArrow.class
+com\archery\model\Arrow.class
+com\archery\dao\ArcheryDao.class
+com\archery\model\MatchPlayer.class
+com\archery\model\Substitution.class
+com\archery\service\ArcheryService.class
+com\archery\model\ArcheryMatch.class
+com\archery\dao\impl\ArcheryDaoImpl.class
+com\archery\model\SetResult.class
+com\archery\model\Team.class
+com\archery\model\Player.class
+com\archery\service\MatchFileService.class

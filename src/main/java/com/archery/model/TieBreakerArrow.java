@@ -7,17 +7,21 @@ public class TieBreakerArrow {
     private int teamId;
     private double xPercent;
     private double yPercent;
+    private int score;
+    private String scoreDisplay;
     private double distanceFromCentre;
 
     public TieBreakerArrow(){}
 
-    public TieBreakerArrow(int arrowNumber,int playerId,String playerName,int teamId,double xPercent,double yPercent,double distanceFromCentre){
+    public TieBreakerArrow(int arrowNumber,int playerId,String playerName,int teamId,double xPercent,double yPercent,int score,String scoreDisplay,double distanceFromCentre){
         this.arrowNumber=arrowNumber;
         this.playerId=playerId;
         this.playerName=playerName;
         this.teamId=teamId;
         this.xPercent=xPercent;
         this.yPercent=yPercent;
+        this.score=score;
+        this.scoreDisplay=scoreDisplay;
         this.distanceFromCentre=distanceFromCentre;
     }
 
@@ -33,6 +37,10 @@ public class TieBreakerArrow {
     public void setxPercent(double xPercent){this.xPercent=xPercent;}
     public double getyPercent(){return yPercent;}
     public void setyPercent(double yPercent){this.yPercent=yPercent;}
+    public int getScore(){return score;}
+    public void setScore(int score){this.score=score;}
+    public String getScoreDisplay(){return scoreDisplay;}
+    public void setScoreDisplay(String scoreDisplay){this.scoreDisplay=scoreDisplay;}
     public double getDistanceFromCentre(){return distanceFromCentre;}
     public void setDistanceFromCentre(double distanceFromCentre){this.distanceFromCentre=distanceFromCentre;}
 

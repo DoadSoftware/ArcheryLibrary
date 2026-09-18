@@ -27,6 +27,7 @@ public class ArcheryMatch {
     private boolean tieBreakerStarted=false;
     private boolean tieBreakerCompleted=false;
     private int tieBreakerWinnerTeamId;
+    private int tieBreakerRound=1;
     private List<TieBreakerArrow> tieBreakerArrows=new ArrayList<>();
 
     public String getMatchFileName(){return matchFileName;}
@@ -73,6 +74,8 @@ public class ArcheryMatch {
     public void setTieBreakerCompleted(boolean tieBreakerCompleted){this.tieBreakerCompleted=tieBreakerCompleted;}
     public int getTieBreakerWinnerTeamId(){return tieBreakerWinnerTeamId;}
     public void setTieBreakerWinnerTeamId(int tieBreakerWinnerTeamId){this.tieBreakerWinnerTeamId=tieBreakerWinnerTeamId;}
+    public int getTieBreakerRound(){return tieBreakerRound;}
+    public void setTieBreakerRound(int tieBreakerRound){this.tieBreakerRound=tieBreakerRound;}
     public List<TieBreakerArrow> getTieBreakerArrows(){return tieBreakerArrows;}
     public void setTieBreakerArrows(List<TieBreakerArrow> tieBreakerArrows){this.tieBreakerArrows=tieBreakerArrows;}
     

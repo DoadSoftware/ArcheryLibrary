@@ -29,6 +29,9 @@ public class Player implements Comparable<Player> {
 
     @Column(name = "TEAMID")
     private Integer teamId;
+    
+    @Column(name = "Role")
+    private String role;
 
     public Player() {}
 
@@ -101,6 +104,13 @@ public class Player implements Comparable<Player> {
 		this.teamId = teamId;
 	}
 
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 
 	public String getDisplayName() {
         if (fullName != null && !fullName.isBlank()) return fullName;

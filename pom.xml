@@ -7,7 +7,7 @@
 
     <groupId>com.archery</groupId>
     <artifactId>ArcheryLibrary</artifactId>
-    <version>1.4</version>
+    <version>1.5</version>
     <packaging>jar</packaging>
 
     <name>ArcheryLibrary</name>

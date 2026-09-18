@@ -8,12 +8,13 @@ public class MatchPlayer {
     
     private int playerId;
     private String playerName;
+    private String playerRole;
     private String status;
     private int position;
     
     public MatchPlayer() {}
     
-    public MatchPlayer(int playerId,String playerName,String status,int position) {
+    public MatchPlayer(int playerId,String playerName,String status,int position,String playerRole) {
         this.playerId=playerId;
         this.playerName=playerName;
         this.status=status;
@@ -43,8 +44,17 @@ public class MatchPlayer {
     public void setPosition(int position) {
         this.position=position;
     }
-    @Override
-    public String toString() {
-        return "MatchPlayer{playerId="+playerId+", playerName='"+playerName+"', status='"+status+"', position="+position+"}";
-    }
+    public String getPlayerRole() {
+		return playerRole;
+	}
+	public void setPlayerRole(String playerRole) {
+		this.playerRole = playerRole;
+	}
+
+	@Override
+	public String toString() {
+		return "MatchPlayer [playerId=" + playerId + ", playerName=" + playerName + ", playerRole=" + playerRole
+				+ ", status=" + status + ", position=" + position + "]";
+	}
+
 }
